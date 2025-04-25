@@ -11,75 +11,33 @@ import { SectionTitle } from "./sectionTitle/sectionTitle";
 const Form = ({ FormData, onChange, isExperienceEnabled, isEducationEnabled, isSkillEnabled, isInterestEnabled, isAwardsEnabled,
   isProjectEnabled, toggleProject, toggleExperience, toggleEducation, toggleSkill, toggleInterest, toggleAward }) => {
   const Desc = {
-    FullName: [
-      "text",
-      "Full Name",
-      "This is your full name. This has been generated using your first and last names.",
-    ],
-    FirstName: [
-      "text",
-      "First Name",
-      "Please enter your first name.",
-    ],
+    FullName: ["text", "Full Name", "This is your full name. This has been generated using your first and last names."],
+    FirstName: ["text", "First Name", "Please enter your first name."],
     LastName: ["text", "Last Name", "Please enter your last name"],
-    Thubmnail: [
-      "text",
-      "Your Photo",
-      "Please upload your photo in a CDN(Ex. Imgur) and paste the direct image URL here.",
-    ],
-    URL: [
-      "text",
-      "Website / Resume Link",
-      "Please enter the URL of your website, where this page is going to be hosted",
-    ],
-    Keywords: [
-      "text",
-      "Keywords i.e. frontend developer",
-      "If someone wants to search for you, what keywords should they use?",
-    ],
+    Thubmnail: ["text", "Your Photo", "Please upload your photo in a CDN(Ex. Imgur) and paste the direct image URL here."],
+    URL: ["text", "Website / Resume Link", "Please enter the URL of your website, where this page is going to be hosted"],
+    Keywords: ["text", "Keywords i.e. frontend developer", "If someone wants to search for you, what keywords should they use?"],
     Description: ["text", "About you", "Write something nice about you."],
-    
-    Address: [
-      "text",
-      "Where are you?",
-      "Type a city and state.",
-    ],
-    Phone: [
-      "text",
-      "Phone Number",
-      "Please enter a phone number where you may be reached.",
-    ],
+    Address: ["text", "Location", "Type a city and state."],
+    Phone: ["text", "Phone Number", "Please enter a phone number where you may be reached."],
     Email: ["text", "Email Address", "Type your primary email address"],
-
     Socials: {
-      Instagram: [
-        "text",
-        "Instagram Username",
-        "If you may like, enter your instagram @",
-      ],
-      LinkedIn: [
-        "text",
-        "LinkedIn ID",
-        "Enter your name on LinkedIn.",
-      ],
-      GitHub: [
-        "text",
-        "GitHub Username",
-        "Enter your name on Github. ",
-      ],
-    },
+      Instagram: ["text", "Instagram Username", "If you may like, enter your instagram @"],
+      LinkedIn: ["text", "LinkedIn ID", "Enter your name on LinkedIn."],
+      GitHub: ["text", "GitHub Username", "Enter your name on Github. "]
+    }
   };
 
   const getBorderColor = (fd) => {
-    if (FormData[fd].length != 0 && fd !== "Colour") {
-      //changed the code here to neglect the theme color section filled
-      return "border-lime-500"; // Green color for filled section
+    if (FormData[fd].length !== 0 && fd !== "Colour") {
+      return "border-cyan-400";
     }
-    return ""; // No special border color for unfilled section
+    return "";
   };
+
   return (
-    <div className="Form">
-        <h1 className="text-xl mb-2 font-bold">Basic Info</h1>
+    <div className="Form text-black bg-slate-100 p-6 rounded-xl shadow-lg">
+      <h1 className="text-2xl font-semibold mb-6 border-b border-cyan-400 pb-2">Basic Info</h1>
       {Object.keys(FormData).map((fd) =>
         fd !== "Socials" ? (
           Object.keys(Desc).includes(fd) && (
@@ -100,88 +58,33 @@ const Form = ({ FormData, onChange, isExperienceEnabled, isEducationEnabled, isS
           <SocialMedia
             MediaData={Desc[fd]}
             value={FormData[fd]}
-            onChange={fd === "FullName" ? () => {} : onChange}
+            onChange={onChange}
           />
         )
       )}
-       <div className={isExperienceEnabled ?"bg-white my-8" : "bg-gray-200 my-4 p-2 rounded-lg flex flex-col gap-y-3"}>
-        {true ? (
-          <>
-            <SectionTitle initialTitle="Experience" titleType="experience"/>
-            <ExperienceList />
-          </>
-        ) : (
-          <p className="">Experience section is disabled.</p>
-        )}
-        
-        {/* <button className={"text-white  w-full py-1 " + (isExperienceEnabled ? "bg-red-100 hover:bg-red-300 rounded-b-lg":"bg-green-600 hover:bg-green-500 rounded-sm")} onClick={toggleExperience}>
-          {isExperienceEnabled ? 'Remove' : 'Add'} Experience Section
-        </button> */}
-      </div>
 
-      <div className={isEducationEnabled ?"bg-white my-8" : "bg-gray-200 my-4 p-2 rounded-lg flex flex-col gap-y-3"}>
-        {true ? (
-          <>
-            <SectionTitle initialTitle="Education" titleType='education'/>
-            <EducationList />
-          </>
-        ) : (
-          <p>Education section is disabled.</p>
-        )}
-        {/* <button className={"text-white  w-full py-1 " + (isEducationEnabled ? "bg-red-100 hover:bg-red-300 rounded-b-lg":"bg-green-600 hover:bg-green-500 rounded-sm")} onClick={toggleEducation}>
-          {isEducationEnabled ? 'Remove' : 'Add'} Education Section
-        </button> */}
-      </div>
-      
-      <div className={isSkillEnabled ?"bg-white my-8" : "bg-gray-200 my-4 p-2 rounded-lg flex flex-col gap-y-3"}>
-      {true ? (
-          <>
-            <SectionTitle initialTitle="Skills" titleType="skills"/>
-            <SkillsList />
-          </>
-        ) : (
-          <p>Skills section is disabled.</p>
-        )}
-        {/* <button className={"text-white  w-full py-1 " + (isSkillEnabled ? "bg-red-100 hover:bg-red-300 rounded-b-lg":"bg-green-600 hover:bg-green-500 rounded-sm")} onClick={toggleSkill}>
-          {isSkillEnabled ? 'Remove' : 'Add'} Skills Section
-        </button> */}
-      </div>
-
-      <div className={isInterestEnabled ?"bg-white my-8" : "bg-gray-200 my-4 p-2 rounded-lg flex flex-col gap-y-3"}>
-      {true ? (
-          <>
-           <SectionTitle initialTitle="Interests" titleType="interests"/>
-           <InterestList />
-          </>
-        ) : (
-          <p>Interest section is disabled.</p>
-        )}
-        {/* <button className={"text-white  w-full py-1 " + (isInterestEnabled ? "bg-red-100 hover:bg-red-300 rounded-b-lg":"bg-green-600 hover:bg-green-500 rounded-sm")} onClick={toggleInterest}>
-          {isInterestEnabled ? 'Remove' : 'Add'} Interest Section
-        </button> */}
-      </div>
-
-      <div className={isAwardsEnabled ?"bg-white my-8" : "bg-gray-200 my-4 p-2 rounded-lg flex flex-col gap-y-3"}>
-      {true ? (
-          <>
-           <SectionTitle initialTitle="Awards" titleType="awards"/>
-           <AwardList />
-          </>
-        ) : (
-          <p>Awards section is disabled.</p>
-        )}
-      </div>
-      
-      <div className={isProjectEnabled ? "bg-white my-8" : "bg-gray-200 my-4 p-2 rounded-lg flex flex-col gap-y-3"}>
-      {true ? (
-          <>
-           <SectionTitle initialTitle="Projects" titleType="projects"/>
-           <ProjectList />
-          </>
-        ) : (
-          <p>Projects section is disabled.</p>
-        )}
-      </div>
+      {[
+        ["Experience", isExperienceEnabled, <ExperienceList />],
+        ["Education", isEducationEnabled, <EducationList />],
+        ["Skills", isSkillEnabled, <SkillsList />],
+        ["Interests", isInterestEnabled, <InterestList />],
+        ["Awards", isAwardsEnabled, <AwardList />],
+        ["Projects", isProjectEnabled, <ProjectList />]
+      ].map(([title, isEnabled, Component], idx) => (
+        <div
+          key={idx}
+          className={`my-8 p-4 rounded-lg ${isEnabled ? "bg-white border border-cyan-300" : "bg-gray-200 text-gray-700"}`}
+        >
+          {isEnabled ? (
+            <>
+              <SectionTitle initialTitle={title} titleType={title.toLowerCase()} />
+              {Component}
+            </>
+          ) : (
+            <p>{title} section is disabled.</p>
+          )}
+        </div>
+      ))}
     </div>
   );
 };
