@@ -42,30 +42,30 @@ const Form = ({ FormData, onChange, isExperienceEnabled, isEducationEnabled, isS
     Address: [
       "text",
       "Where are you?",
-      "Type in your full address to get kidnapped!",
+      "Type a city and state.",
     ],
     Phone: [
       "text",
       "Phone Number",
-      "Please enter your phone number, so I can call you in the middle of the night!",
+      "Please enter a phone number where you may be reached.",
     ],
-    Email: ["text", "Email Address", "Tell us your primary email address"],
+    Email: ["text", "Email Address", "Type your primary email address"],
 
     Socials: {
       Instagram: [
         "text",
         "Instagram Username",
-        "Please enter your Instagram username, so that I can double-tap all your photos!",
+        "If you may like, enter your instagram @",
       ],
       LinkedIn: [
         "text",
         "LinkedIn ID",
-        "Please enter your LinkedIn ID, so that I can congratulate you on your 'work anniversaries'!",
+        "Enter your name on LinkedIn.",
       ],
       GitHub: [
         "text",
         "GitHub Username",
-        "Please enter your GitHub username, so that I can fork your repositories!",
+        "Enter your name on Github. ",
       ],
     },
   };

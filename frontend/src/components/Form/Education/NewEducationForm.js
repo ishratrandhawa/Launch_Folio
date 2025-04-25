@@ -81,7 +81,7 @@ const NewEducationForm = ({ educations = [], onCreatePressed }) => {
       <input
           className="w-3/4 dark:bg-zinc-800 form-control form-control-sm mb-2 border py-1 px-2 rounded-sm text-sm capitalize outline-none"
           type="text"
-          placeholder="Branch/Department"
+          placeholder="School"
           value={branch}
           onChange={(e) => setBranch(e.target.value)}
         />
