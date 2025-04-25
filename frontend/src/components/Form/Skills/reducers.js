@@ -53,11 +53,6 @@ let availableSkills = [
       url: "https://www.patterns.dev/img/reactjs/react-logo@3x.svg"
     },
     {
-      name: "flutter",
-      image: "flutter.png",
-      url: "https://cdn-images-1.medium.com/v2/resize:fit:1200/1*5-aoK8IBmXve5whBQM90GA.png"
-    },
-    {
       name: "django",
       image: "django.png",
       url: "https://miro.medium.com/v2/resize:fit:1400/1*HVKOLLX7wprRbHTl2IPDcQ.png"
@@ -98,44 +93,9 @@ let availableSkills = [
       url: "https://www.freecodecamp.org/news/content/images/2022/08/A6125B75-DB79-4448-94C9-E6ABD3E0E3E9.jpeg"
     },
     {
-      name: "Circuit Design",
-      image: "circuit_design.png",
-      url: "https://m.media-amazon.com/images/I/51b-JN4TuRL._AC_UF1000,1000_QL80_.jpg"
-    },
-    {
-      name: "Digital Electronics",
-      image: "digital_electronics.png",
-      url: "https://media.licdn.com/dms/image/D5612AQEhrNkma4rroQ/article-cover_image-shrink_720_1280/0/1700201264744?e=2147483647&v=beta&t=mkhDCeQp2N2n-TkUmGQpko8irqeLYHF-SYdYLsUh4gg"
-    },
-    {
-      name: "Analog Electronics",
-      image: "analog_electronics.png",
-      url: "https://www.electronicsforu.com/wp-contents/uploads/2023/01/Analog-Electronics-Circuit.jpg"
-    },
-    {
-      name: "Control Systems",
-      image: "control_systems.png",
-      url: "https://media.licdn.com/dms/image/D5612AQESHjzy65U9tQ/article-cover_image-shrink_720_1280/0/1679720980238?e=2147483647&v=beta&t=2wWXCmfA632TmRfHvODb2D0dFLtdqVrYjU2mCeu5Vyc"
-    },
-    {
-      name: "Microcontrollers",
-      image: "microcontrollers.png",
-      url: "https://images.wevolver.com/eyJidWNrZXQiOiJ3ZXZvbHZlci1wcm9qZWN0LWltYWdlcyIsImtleSI6ImZyb2FsYS8xNjgxMjg4Mzc5NTYwLWFyZHVpbm8uanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo5NTAsImZpdCI6ImNvdmVyIn19fQ=="
-    },
-    {
       name: "Matlab",
       image: "Matlab.png",
       url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Matlab_Logo.png/1200px-Matlab_Logo.png"
-    },
-    {
-      name: "AutoCAD",
-      image: "autocad.png",
-      url: "https://play-lh.googleusercontent.com/y92LD5c5rdlNfquCy-YPNIvdnS4ISEL05wickp28OLya8WlmWQwXfAP0Yys9iTssny3K"
-    },
-    {
-      name: "Finite Element Analysis (FEA)",
-      image: "fea.png",
-      url: "https://i.ytimg.com/vi/CAkkVIsNxDE/sddefault.jpg"
     },
     {
       name: "3D Modeling",
@@ -146,21 +106,6 @@ let availableSkills = [
       name: "Product Design",
       image: "product_design.png",
       url: "https://www.raymont-osman.com/content/images/2023/07/Product-Design-Development-Process-Banner.webp"
-    },
-    {
-      name: "Thermal Analysis",
-      image: "thermal_analysis.png",
-      url: "https://www.simscale.com/wp-content/uploads/2019/09/thermal-analysis-tool-blog-featured.png"
-    },
-    {
-      name: "Structural Analysis",
-      image: "structural_analysis.png",
-      url: "https://media.licdn.com/dms/image/C4E12AQHlj0h9lzmoWw/article-cover_image-shrink_720_1280/0/1520080032401?e=2147483647&v=beta&t=DUHcnTR4qNgxJKjp3n2wTCdMlrqk7-JIuYwEeckvRNo"
-    },
-    {
-      name: "Computational Fluid Dynamics (CFD)",
-      image: "cfd.png",
-      url: "https://www.ptc.com/-/media/Images/blog/post/cad-blog/2022/january/cfd/computational-fluid-dynamics-featured.png"
     },
     {
       name: "Figma",

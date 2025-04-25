@@ -13,14 +13,14 @@ const Form = ({ FormData, onChange, isExperienceEnabled, isEducationEnabled, isS
   const Desc = {
     FullName: ["text", "Full Name", "This is your full name. This has been generated using your first and last names."],
     FirstName: ["text", "First Name", "Please enter your first name."],
-    LastName: ["text", "Last Name", "Please enter your last name"],
+    LastName: ["text", "Last Name", "Please enter your last name."],
     Thubmnail: ["text", "Your Photo", "Please upload your photo in a CDN(Ex. Imgur) and paste the direct image URL here."],
     URL: ["text", "Website / Resume Link", "Please enter the URL of your website, where this page is going to be hosted"],
     Keywords: ["text", "Keywords i.e. frontend developer", "If someone wants to search for you, what keywords should they use?"],
     Description: ["text", "About you", "Write something nice about you."],
     Address: ["text", "Location", "Type a city and state."],
     Phone: ["text", "Phone Number", "Please enter a phone number where you may be reached."],
-    Email: ["text", "Email Address", "Type your primary email address"],
+    Email: ["text", "Email Address", "Type your primary email address."],
     Socials: {
       Instagram: ["text", "Instagram Username", "If you may like, enter your instagram @"],
       LinkedIn: ["text", "LinkedIn ID", "Enter your name on LinkedIn."],
