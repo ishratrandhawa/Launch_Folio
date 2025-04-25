@@ -52,25 +52,10 @@ const Form = ({ FormData, onChange, isExperienceEnabled, isEducationEnabled, isS
     Email: ["text", "Email Address", "Tell us your primary email address"],
 
     Socials: {
-      Facebook: [
-        "text",
-        "Facebook Id",
-        "Please enter your Facebook handle, so that I can follow your cat videos and food pics!",
-      ],
-      WhatsApp: [
-        "text",
-        "WhatsApp Number",
-        "Please enter your WhatsApp number, so that I can send you 1000 'Good Morning' messages every day!",
-      ],
       Instagram: [
         "text",
         "Instagram Username",
         "Please enter your Instagram username, so that I can double-tap all your photos!",
-      ],
-      Twitter: [
-        "text",
-        "Twitter Handle",
-        "Please enter your Twitter handle, so that I can retweet your witty thoughts!",
       ],
       LinkedIn: [
         "text",
@@ -81,11 +66,6 @@ const Form = ({ FormData, onChange, isExperienceEnabled, isEducationEnabled, isS
         "text",
         "GitHub Username",
         "Please enter your GitHub username, so that I can fork your repositories!",
-      ],
-      StackOverflow: [
-        "text",
-        "StackOverflow Profile",
-        "Please enter your StackOverflow profile, so that I can ask you to solve my coding dilemmas!",
       ],
     },
   };
