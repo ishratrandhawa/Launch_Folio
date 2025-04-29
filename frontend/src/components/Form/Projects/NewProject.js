@@ -96,36 +96,11 @@ const NewProjectForm = ({ onCreatePressed, onChangeDesign }) => {
         value={projectData.name}
         onChange={handleChange}
       />
-      <input
-        type="text"
-        className="ml-1 w-1/2 dark:bg-zinc-800 form-control form-control-sm mb-2 border py-1 px-2 rounded-r-sm text-sm capitalize outline-gray-200"
-        name="image"
-        placeholder="Project Image URL"
-        value={projectData.image}
-        onChange={handleChange}
-      />
       <textarea
         className="w-full dark:bg-zinc-800 form-control form-control-sm mb-2 border py-1 px-2 rounded-sm text-sm capitalize outline-none"
         name="description"
         placeholder="Project Description"
         value={projectData.description}
-        onChange={handleChange}
-      />
-      
-      <input
-        type="text"
-        className="dark:bg-zinc-800 form-control form-control-sm mb-2 border py-1 px-2 mr-1 rounded-l-sm text-sm capitalize outline-none"
-        name="techStack"
-        placeholder="Tech Stack"
-        value={projectData.techStack}
-        onChange={handleChange}
-      />
-      <input
-        type="text"
-        className="dark:bg-zinc-800 form-control form-control-sm mb-2 border py-1 px-2 mr-1 text-sm capitalize outline-none"
-        name="websiteLink"
-        placeholder="Website Link"
-        value={projectData.websiteLink}
         onChange={handleChange}
       />
       <input

@@ -90,7 +90,6 @@ const Code = ({
       </style>
     `;
   
-    // Add the custom styles to the HTML
     skillsSection += customStyles;
   } else {
     skillsSection = '';
@@ -227,8 +226,6 @@ const Code = ({
         }
       </style>
     `;
-  
-    // Add the custom styles to the HTML
     projectSection += customStyles2;
   } else {
     projectSection = "";
