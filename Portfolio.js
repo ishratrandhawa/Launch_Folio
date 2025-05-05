@@ -110,4 +110,5 @@ const PortfolioSchema = new mongoose.Schema({
 
 })
 
+
 export const PortfolioModel = mongoose.model("Portfolio", PortfolioSchema)
