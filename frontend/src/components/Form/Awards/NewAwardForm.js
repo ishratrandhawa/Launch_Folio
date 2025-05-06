@@ -6,20 +6,20 @@ import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+
 const NewAwardForm = ({ awards = [], onCreatePressed }) => {
   const [award, setAward] = useState("");
-  const [isTyping, setIsTyping] = useState(false); // State variable to track typing
+  const [isTyping, setIsTyping] = useState(false); 
   const [isAwardsFilled, setIsAwardsFilled] = useState(false);
 
   const handleInputChange = () => {
-    setIsTyping(true); // Set the state to true when the user starts typing
+    setIsTyping(true); 
   };
 
   const handleBlur = () => {
-    setIsTyping(false); // Reset the state when the user clicks outside the input field
+    setIsTyping(false); 
   };
 
-  // Use useEffect to check if the skill field is filled whenever it changes
   useEffect(() => {
     if (award) {
       setIsAwardsFilled(true);
