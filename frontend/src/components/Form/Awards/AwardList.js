@@ -6,6 +6,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import AwardCard from './AwardCard';
 
+
 const AwardList = ({ awards = [], onRemovePressed, onEditPressed }) => {
     return(
     <div>
@@ -21,6 +22,7 @@ const mapStateToProps = state => ({
     awards: state.awards,
 });
 
+
 const mapDispatchToProps = dispatch => ({
     onRemovePressed: award => {
         toast.success('Award removed successfully', {
@@ -31,5 +33,6 @@ const mapDispatchToProps = dispatch => ({
         dispatch(removeAward(award))},
     onEditPressed: (award, editedAward) => dispatch(editAward(award, editedAward)),
 });
+
 
 export default connect(mapStateToProps, mapDispatchToProps)(AwardList);

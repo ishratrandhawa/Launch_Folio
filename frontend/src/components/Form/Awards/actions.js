@@ -5,6 +5,7 @@ export const createAward = award => ({
     payload: {award}
 });
 
+
 export const REMOVE_AWARD = 'REMOVE_AWARD';
 
 export const removeAward = award => ({
