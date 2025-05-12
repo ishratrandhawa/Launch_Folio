@@ -43,10 +43,12 @@ export const updateProjects = (newTitle) => ({
   payload: newTitle,
 });
 
+
 export const removeExperience = experience => ({
     type: REMOVE_EXPERIENCE,
     payload: {experience}
 });
+
 
 export const editExperience = (oldExperience, newExperience) => ({
     type: EDIT_EXPERIENCE,

@@ -8,15 +8,15 @@ import "react-toastify/dist/ReactToastify.css";
 
 const NewInterestForm = ({ interests = [], onCreatePressed }) => {
   const [interest, setInterest] = useState("");
-  const [isTyping, setIsTyping] = useState(false); // State variable to track typing
+  const [isTyping, setIsTyping] = useState(false); 
   const [isInterestFilled, setIsInterestFilled] = useState(false);
 
   const handleInputChange = () => {
-    setIsTyping(true); // Set the state to true when the user starts typing
+    setIsTyping(true); 
   };
 
   const handleBlur = () => {
-    setIsTyping(false); // Reset the state when the user clicks outside the input field
+    setIsTyping(false); 
   };
 
   useEffect(() => {

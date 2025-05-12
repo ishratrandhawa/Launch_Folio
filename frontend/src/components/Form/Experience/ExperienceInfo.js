@@ -74,4 +74,5 @@ const ExperienceInfo = ({ experience, isEditing, setEditedExperience }) => {
     );
 };
 
+
 export default ExperienceInfo;
