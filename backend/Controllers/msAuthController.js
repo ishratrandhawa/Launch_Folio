@@ -38,8 +38,6 @@ export const login = async (req, res) => {
   res.redirect(authUrl);
 };
 
-
-
 export const getToken = async (req,res) => {
 
   const url = `https://login.microsoftonline.com/${tenantID}/oauth2/token`;
