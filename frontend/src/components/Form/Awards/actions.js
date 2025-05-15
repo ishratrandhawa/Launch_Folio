@@ -5,14 +5,12 @@ export const createAward = award => ({
     payload: {award}
 });
 
-
 export const REMOVE_AWARD = 'REMOVE_AWARD';
 
 export const removeAward = award => ({
     type: REMOVE_AWARD,
     payload: {award}
 });
-
 export const EDIT_AWARD = 'EDIT_AWARD';
 
 export const editAward = (oldAward, newAward) => ({

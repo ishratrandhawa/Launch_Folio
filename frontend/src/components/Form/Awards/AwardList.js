@@ -33,6 +33,4 @@ const mapDispatchToProps = dispatch => ({
         dispatch(removeAward(award))},
     onEditPressed: (award, editedAward) => dispatch(editAward(award, editedAward)),
 });
-
-
 export default connect(mapStateToProps, mapDispatchToProps)(AwardList);
