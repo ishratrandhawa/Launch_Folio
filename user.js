@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-
 var userSchemma = new mongoose.Schema({
     name:{
         type:String,
