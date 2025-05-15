@@ -57,7 +57,6 @@ const Option1 = (props) => {
       alert("Failed to send feedback");
     }
   };
-
   return (
     <section className="w-full h-screen" id="awards" style={{ fontFamily: "Poppins" }}>
       <div className="w-full h-full px-4 md:px-32 pt-24 md:pt-28" style={{ color: "rgba(255, 247, 233, 1)" }}>

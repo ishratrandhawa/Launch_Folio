@@ -10,7 +10,6 @@ const Option3 = ({ experience }) => {
       prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]
     );
   };
-
   const getValidHostname = (link) => {
     try {
       return new URL(link).hostname;
@@ -18,7 +17,7 @@ const Option3 = ({ experience }) => {
       return "Invalid URL";
     }
   };
-
+  
   return (
     <div className="w-full min-h-screen bg-neutral-100 font-sans px-4 py-20" id="experience">
       {/* Section Header */}
