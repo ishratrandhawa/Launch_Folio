@@ -1,11 +1,9 @@
 import mongoose from "mongoose";
-
 const PortfolioSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true,
     },
-    
     formData: {
         firstName: {
             type: String,
