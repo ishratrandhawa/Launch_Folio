@@ -1,6 +1,5 @@
 import React from 'react';
 import NewInterestForm from './NewInterestForm';
-import Interest from './Interest';
 import { connect } from 'react-redux';
 import { editInterest, removeInterest } from './actions';
 import { toast } from "react-toastify";

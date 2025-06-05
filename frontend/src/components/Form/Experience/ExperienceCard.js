@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import React, { useState } from 'react'
 import ExperienceInfo from './ExperienceInfo';
-// import EducationInfo from './EducationInfo';
 
 const ExperienceCard = ({ experience, onRemovePressed, onEditPressed}) => {
   const [isEditing, setIsEditing] = useState(false);

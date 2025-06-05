@@ -41,7 +41,7 @@ const NewAwardForm = ({ awards = [], onCreatePressed }) => {
       <input
         className="dark:bg-zinc-800 form-control form-control-sm mt-4 mb-2 w-full md:w-90 border p-1 outline-none"
         type="text"
-        placeholder="Award/Achievement/Certification"
+        placeholder="Achievement/Certification"
         value={award}
         onChange={(e) => {
           setAward(e.target.value);

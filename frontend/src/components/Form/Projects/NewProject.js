@@ -16,9 +16,9 @@ const NewProjectForm = ({ onCreatePressed, onChangeDesign }) => {
     githubLink: "",
     timeline: "",
     guidedByProfessor: false,
-    professorName: "", // New field for professor's name
-    isClubProject: false, // New field for club project
-    clubName: "", // New field for club name
+    professorName: "", 
+    isClubProject: false, 
+    clubName: "", 
     isSelfProject: false,
     selectedDesign:"design1"
   });
@@ -64,7 +64,6 @@ const NewProjectForm = ({ onCreatePressed, onChangeDesign }) => {
       return;
     }
 
-    // Create a new project object and dispatch the action
     const newProject = { project: projectData };
     onCreatePressed(newProject);
 
@@ -78,9 +77,9 @@ const NewProjectForm = ({ onCreatePressed, onChangeDesign }) => {
       githubLink: "",
       timeline: "",
       guidedByProfessor: false,
-      professorName: "", // New field for professor's name
-      isClubProject: false, // New field for club project
-      clubName: "", // New field for club name
+      professorName: "", 
+      isClubProject: false, 
+      clubName: "", 
       isSelfProject: false,
       selectedDesign:""
     });

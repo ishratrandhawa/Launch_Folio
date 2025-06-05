@@ -22,7 +22,6 @@ const mapStateToProps = state => ({
     awards: state.awards,
 });
 
-
 const mapDispatchToProps = dispatch => ({
     onRemovePressed: award => {
         toast.success('Award removed successfully', {

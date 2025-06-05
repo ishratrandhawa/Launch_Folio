@@ -1,6 +1,6 @@
 import React from 'react';
 import HalfStar from "../../images/half_star.png";
-import flowerImage from "../../images/Vector2.png"; // swap with your cute flower asset
+import flowerImage from "../../images/Vector2.png"; 
 
 const Option4 = ({ FirstName, LastName, Thubmnail, Keywords, Description, Address, URL }) => {
   return (

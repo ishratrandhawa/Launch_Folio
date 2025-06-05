@@ -6,8 +6,6 @@ import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-// Define some sample skills
-
 const NewSkillForm = ({ onCreatePressed, onSelectSkill,availableSkills}) => {
   const [selectedSkillName, setSelectedSkillName] = useState("");
 
@@ -27,10 +25,10 @@ const NewSkillForm = ({ onCreatePressed, onSelectSkill,availableSkills}) => {
 
     const skillObject = availableSkills.find((skill) => skill.name === selectedSkillName);
     if (skillObject) {
-      onSelectSkill(skillObject); // Dispatch the selectSkill action
+      onSelectSkill(skillObject); 
     }
     else {
-      // Handle the case where skillObject is not found (e.g., show an error message)
+      // Handling case where skillObject is not found (error message)
       console.error(selectedSkillName);
     }
   };

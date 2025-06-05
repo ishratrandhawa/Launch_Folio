@@ -128,12 +128,8 @@ const skills = (state = initialState, action) => {
     case SELECT_SKILL: {
       const { skill } = payload;
   
-    
-      // Apply the filter logic
       const updatedAvailableSkills = state.availableSkills.filter((s) => s.name !== skill.name);
       const updatedSelectedSkills = [...state.selectedSkills, skill];
-    
-      // Return the updated state
       return {
         ...state,
         availableSkills: updatedAvailableSkills,
